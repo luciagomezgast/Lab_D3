@@ -39,3 +39,21 @@ for (let i = (hacker1.length - 1); i >= 0; i--) {
     wordReverse = wordReverse + hacker1[i];
 }
 console.log(wordReverse);
+
+//Bonus1
+let longText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla scelerisque sem ac diam congue viverra. Fusce vel nunc dolor. Suspendisse congue, sem vel commodo elementum, velit elit ullamcorper orci, sit amet faucibus magna arcu a sapien. Vivamus vestibulum odio ac odio tristique, nec condimentum mauris sagittis. Donec iaculis mauris nec velit finibus luctus. Nam felis mauris, egestas et dictum fermentum, placerat a libero. Donec diam erat, vehicula vitae pharetra id, vehicula congue quam. Vivamus tincidunt leo sem, vel volutpat tortor tempor eu. Duis et molestie sapien. Nam pellentesque eget justo vel gravida. Morbi in erat ante. Praesent quis vulputate odio. Sed egestas ullamcorper rhoncus. Aenean semper a ante at rutrum.Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis consequat placerat dignissim. Donec condimentum, ligula at feugiat dictum, diam metus suscipit tellus, et mollis dui erat in lacus. Sed et mi non neque convallis egestas. Aenean eu auctor turpis, vitae auctor neque. Suspendisse nec ex rhoncus, luctus leo vestibulum, faucibus nulla. Pellentesque vitae odio risus. Curabitur odio felis, malesuada pretium varius a, rutrum vel odio.Donec fringilla nibh sed tellus eleifend porta. Nulla posuere dui nulla, rhoncus condimentum orci porta eu. Aenean ullamcorper nunc ut ex iaculis interdum. Ut bibendum risus tortor, sed interdum turpis tincidunt ac. Mauris pharetra, tortor eget luctus ornare, leo dolor facilisis diam, elementum fringilla nunc justo id nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In congue quis erat sed fringilla'
+
+let array = longText.split(' ')
+console.log(array.length);
+
+let etCounter = 0
+for (let i = 0; i < longText.length; i++) {
+    const char = longText[i];
+    const char2 = longText[i + 1];
+
+    if (char === "e" && char2 === "t") {
+
+        etCounter++
+    }
+}
+console.log(etCounter);
